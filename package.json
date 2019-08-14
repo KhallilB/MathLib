@@ -1,0 +1,22 @@
+{
+  "name": "math-my-friend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhallilB/MathLib.git"
+  },
+  "author": "KhallilB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhallilB/MathLib/issues"
+  },
+  "homepage": "https://github.com/KhallilB/MathLib#readme",
+  "dependencies": {
+    "jest": "^24.8.0"
+  }
+}
