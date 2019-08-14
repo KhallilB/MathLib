@@ -40,26 +40,25 @@ Number.prototype.radToDeg = function radToDeg() {
 };
 
 Number.prototype.toDollars = function toDollars(value) {
-  let cents;
-  let dollars;
-
   if (value > -1 && value < 1) {
+    let cents;
     if (value < 0) {
       cents = Math.ceil(value * 100) / 100;
       cents *= -1;
-      return '-¢', cents;
+      return '-¢' + cents;
     }
     cents = Math.floor(value * 100) / 100;
-    return '¢', cents;
+    return '¢' + cents;
   }
 
   if (value < 0) {
+    let dollars;
     dollars = Math.ceil(value * 100) / 100;
     value *= -1;
-    return '-$', dollars;
+    return '-$' + dollars;
   }
   dollars = Math.floor(value * 100) / 100;
-  return '$', dollars;
+  return '$' + dollars;
 };
 
 Number.prototype.tax = function tax(value, rate) {
